@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <table class="table table-striped my-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Linked Url</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Job Title</th>
+                            <th scope="col">Facebook Profile</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Company</th>
+                            <th scope="col">Company Website</th>
+                            <th scope="col">Company Facebook</th>
+                            <th scope="col">Company Email</th>
+                            <th scope="col">Company Phone</th>
+                            <th scope="col">Industry</th>
+                            <th scope="col">Team Size</th>
+                            <th scope="col">Revenue Range</th>
+                            <th scope="col">Total Funding</th>
+                            <th scope="col">Work Email #1</th>
+                            <th scope="col">Work Email #1 Status</th>
+                            <th scope="col">Direct Email #1</th>
+                            <th scope="col">Direct Email #1 Status</th>
+                            <th scope="col">Direct Email #2</th>
+                            <th scope="col">Direct Email #2 Status</th>
+                            <th scope="col">Phone #1</th>
+                            <th scope="col">Phone #2</th>
+                            <th scope="col">Phone #3</th>
+                            <th scope="col">Phone #4</th>
+                            <th scope="col">Phone #5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for leadrock in leadrocks %}
+                        <tr>
+                            <th scope="row">{{forloop.counter}}</th>
+                            <td>{{leadrock.linked_url}}</td>
+                            <td>{{leadrock.full_name}}</td>
+                            <td>{{leadrock.first_name}}</td>
+                            <td>{{leadrock.last_name}}</td>
+                            <td>{{leadrock.job_title}}</td>
+                            <td>{{leadrock.facebook_profile}}</td>
+                            <td>{{leadrock.location}}</td>
+                            <td>{{leadrock.company}}</td>
+                            <td>{{leadrock.company_website}}</td>
+                            <td>{{leadrock.company_facebook}}</td>
+                            <td>{{leadrock.company_email}}</td>
+                            <td>{{leadrock.company_phone}}</td>
+                            <td>{{leadrock.industry}}</td>
+                            <td>{{leadrock.team_size}}</td>
+                            <td>{{leadrock.revenue_range}}</td>
+                            <td>{{leadrock.total_funding}}</td>
+                            <td>{{leadrock.work_email_1}}</td>
+                            <td>{{leadrock.work_email_1_status}}</td>
+                            <td>{{leadrock.direct_email_1}}</td>
+                            <td>{{leadrock.direct_email_1_status}}</td>
+                            <td>{{leadrock.direct_email_2}}</td>
+                            <td>{{leadrock.direct_email_2_status}}</td>
+                            <td>{{leadrock.phone_1}}</td>
+                            <td>{{leadrock.phone_2}}</td>
+                            <td>{{leadrock.phone_3}}</td>
+                            <td>{{leadrock.phone_4}}</td>
+                            <td>{{leadrock.phone_5}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
