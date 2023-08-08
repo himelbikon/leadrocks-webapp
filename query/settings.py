@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h0mxwm=a1xc#ha3sl0l(%wh(_-%3dj^o3#7z&^6-+k1jo!6h7$'
 
 
-if os.path.exists('dev.py'):
+if os.path.exists('query/dev.py'):
     DEV = True
 else:
     DEV = False
